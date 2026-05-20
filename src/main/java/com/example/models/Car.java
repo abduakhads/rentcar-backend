@@ -42,6 +42,9 @@ public class Car {
     @Column(name = "transmission_type")
     private TransmissionType transmissionType;
 
+    @Column(name = "image_url")
+    private String imageUrl;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "location_id")
     private Location location;

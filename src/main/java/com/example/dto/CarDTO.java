@@ -15,4 +15,5 @@ public class CarDTO {
     private TransmissionType transmissionType;
     private CarStatus status;
     private String locationCode;
+    private String imageUrl;
 }

@@ -65,6 +65,7 @@ public class DataInitializer implements CommandLineRunner {
             car1.setStatus(CarStatus.AVAILABLE); // Enum
             car1.setTransmissionType(TransmissionType.AUTOMATIC); // Enum
             car1.setLocation(loc1);
+            car1.setImageUrl("https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800");
             carRepository.save(car1);
 
             Car car2 = new Car();
@@ -79,6 +80,7 @@ public class DataInitializer implements CommandLineRunner {
             car2.setStatus(CarStatus.AVAILABLE);
             car2.setTransmissionType(TransmissionType.MANUAL);
             car2.setLocation(loc2);
+            car2.setImageUrl("https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800");
             carRepository.save(car2);
 
             Reservation res = new Reservation();

@@ -1,4 +1,4 @@
-package com.example.csc399project;
+package com.example.rentcar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,8 +10,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ComponentScan(basePackages = "com.example")
 @EnableJpaRepositories(basePackages = "com.example.repositories")
 @EntityScan(basePackages = "com.example.models")
-public class Csc399ProjectApplication {
+public class RentCar {
     public static void main(String[] args) {
-        SpringApplication.run(Csc399ProjectApplication.class, args);
+        SpringApplication.run(RentCar.class, args);
     }
 }

@@ -24,6 +24,10 @@ public class Member {
     @Column(name = "driving_license_number", unique = true, nullable = false)
     private String drivingLicenseNumber;
 
+    @OneToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User user;
+
     @OneToMany(mappedBy = "member", fetch = FetchType.LAZY)
     private List<Reservation> reservations;
 }

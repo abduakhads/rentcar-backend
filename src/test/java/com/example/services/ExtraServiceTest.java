@@ -1,6 +1,6 @@
 package com.example.services;
 
-import com.example.csc399project.Csc399ProjectApplication;
+import com.example.rentcar.RentCar;
 import com.example.models.Extra;
 import com.example.repositories.ExtraRepository;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest(classes = Csc399ProjectApplication.class)
+@SpringBootTest(classes = RentCar.class)
 @Transactional
 public class ExtraServiceTest {
 
