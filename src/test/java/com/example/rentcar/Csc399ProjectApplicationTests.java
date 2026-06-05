@@ -1,13 +1,18 @@
 package com.example.rentcar;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import com.example.controllers.LocationControllerTest;
+import com.example.services.*;
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
 
-@SpringBootTest
-class Csc399ProjectApplicationTests {
-
-    @Test
-    void contextLoads() {
-    }
-
+@Suite
+@SelectClasses({
+        CarServiceTest.class,
+        ReservationServiceTest.class,
+        LocationServiceTest.class,
+        ExtraServiceTest.class,
+        MemberServiceTest.class,
+        LocationControllerTest.class
+})
+public class Csc399ProjectApplicationTests {
 }
